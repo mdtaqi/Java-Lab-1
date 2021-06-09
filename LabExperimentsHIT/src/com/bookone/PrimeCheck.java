@@ -1,3 +1,4 @@
+package com.bookone;
 import java.util.Scanner;
 
 public class PrimeCheck {
