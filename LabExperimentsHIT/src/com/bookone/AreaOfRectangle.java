@@ -1,4 +1,4 @@
-package com.bookone; //excellent
+package com.bookone;
 import java.util.Scanner;
 class AreaOfRectangle {
 	public static void main (String[] args)
@@ -15,7 +15,4 @@ Scanner scanner=new Scanner(System.in);
 	
 }
 
-// likewise do all the programs 
-// put them all in the LabExperimentHIT project
-// then delete the project
-// all the best
+
