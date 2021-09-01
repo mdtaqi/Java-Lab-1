@@ -2,7 +2,7 @@ package hit.day23;
 
 public class ThreadRevision {
 	public ThreadRevision() {
-		Thread t=new Thread(new ThreadJob());
+		Thread t=new Thread(new ThreadJob(),"goldentouch");
 		t.start();
 	}
 	public static void main(String[] args) {
@@ -13,6 +13,7 @@ public class ThreadRevision {
 		System.out.println(t);
 		//lazy for loop
 		for(int i=0;i<5;i++) {
+			System.out.println(i);
 			try {
 				Thread.sleep(1000);
 			}catch(Exception e) {}
@@ -23,6 +24,7 @@ public class ThreadRevision {
 class ThreadJob implements Runnable{
 	@Override
 	public void run() {
-		System.out.println("child thread is executed....");
+		Thread t=Thread.currentThread();
+		System.out.println("child thread is executed...."+t.getName());
 	}
 }
